@@ -184,14 +184,14 @@ p{
 
 .about{
 	position: relative;
-    background-color: #9cb1a9;
+  background-color: #9cb1a9;
 	width: 1175px;
 	height:645px;
 	margin: 0 auto;
 	z-index: 1;
 }
 .about1	{
-    position: absolute;
+  position: absolute;
 	z-index: 2;
 }
 
@@ -236,14 +236,29 @@ p{
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
-	
+	position: relative;
+	z-index: 0;
 }
 .seedling p{
 	color:#fff;
 	background-color: #9cb1a9;
 	padding: 10px 10px;
-	
 	text-align: center;
+
+}
+.seedling::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #343232;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	z-index: 1;
+}
+.seedling:hover::before {
+	opacity: 0.2;
 }
 .heabtea-wrapper{
 	margin-top: 100px;
