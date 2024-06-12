@@ -1,0 +1,406 @@
+@charset UTF-8;
+
+body {
+	    font-family:"Yu Gothic", YuGothic,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif, Verdana, "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+	background-color: #ffffff;
+	
+}
+header {
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+	background-color: rgba(0,0,0,0.7);
+	justify-content: space-between;
+	margin: 0 auto;
+	height: 120px;
+}
+
+img{
+    vertical-align: bottom;
+}
+.flexBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+
+/*
+----------------------
+Start header
+----------------------
+*/
+.headerNavOuter {
+    margin-bottom: 36px
+}
+.siteIcon {
+    justify-content: center;
+		align-items: center;
+		color: #fff;
+		display: block;
+}
+img {
+    max-width:
+}
+
+/* ナビゲーション */
+ul,{
+list-style: none;
+}
+		
+li {
+    list-style: none;
+    webkit-transform: skewX(150deg);
+    moz-transform: skewX(150deg);
+    transform: skewX(150deg);
+	border-right: 1px solid #fff;
+	font-size: 18px;
+			
+}
+.navItem a {
+    display: block;
+    padding: 45px 0 15px;
+    margin-left: 1px;
+    width: 105px;
+    text-align: center;
+    font-size: 18px;
+	display:block;
+    transform: skewX(-150deg);
+	padding:0 15px;
+	color: #fff;
+	text-decoration: none;
+				
+}
+
+/* 擬似要素でテキストを表示 */
+.navItem a::after {
+    display: block;
+    margin-top: .5px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.navItemAbout a::after {
+    content: "取り組み";
+}
+.navItemItem a::after{
+    content: "商品";
+}
+.navItemExperience a::after {
+    content: "体験";
+}
+.navItemRecipe a::after {
+    content: "レシピ";
+}
+			
+.navItemAccess a::after {
+    content: "アクセス";
+}
+.navItemContact a::after {
+    content: "お問い合わせ";
+}
+
+
+
+
+/*ポジションを相対位置にする*/
+.main-visual {
+	position: relative;
+	margin-bottom: 140px;
+}
+
+h1{
+	text-align:center;
+}
+h1 p{
+	font-size: 16px;
+	color: #fff;
+}
+
+h2{
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	padding: 40px 0;
+	line-height: 1.8;
+}
+	
+h3{
+    color: #000;
+	font-size: 36px;
+/*——文字の右にライン——*/
+    display: flex;
+	align-items: center;
+	width: 1165px;
+	margin: 0 auto;
+	margin-top: 140px;
+	margin-bottom: 40px;
+
+}
+
+
+h3:after {
+border-top: 1px solid;
+content: "";
+flex-grow: 1;
+}
+h3:after {
+margin-left: 1rem;
+}
+
+
+h4{
+	color: #000;
+	font-size: 32px;
+	padding: 1px 1px;
+	border-left: 10px solid #000;
+	
+}
+
+h5{
+    color: #000;
+    font-size: 20px;
+	margin-bottom: 44px;
+	padding: 1px 1px;
+	border-left: 10px solid #000;
+	border-right: 10px solid #000;
+	margin-left: 20px;
+}
+
+p{
+    font-size: 16px;
+	line-height: 1.8;
+	margin-bottom: 40px;
+}
+
+
+.about{
+	position: relative;
+    background-color: #9cb1a9;
+	width: 1175px;
+	height:645px;
+	margin: 0 auto;
+	z-index: 1;
+}
+.about1	{
+    position: absolute;
+	z-index: 2;
+}
+
+.aboutmoji1{
+	color: #fff;
+	z-index: 4;
+	right: 20%;
+	top: 10%;
+	position: absolute;
+}
+.farm{
+	position: absolute;
+	z-index: 3;
+	right: 0;
+	bottom: 0;
+}
+.aboutmoji2{
+	z-index: 4;
+	left: 10%;
+	bottom: 10%;
+	color: #fff;
+	position: absolute;
+}
+
+
+.item{
+	background-color: #efece7;
+	width: 1175px;
+	/*height:1590px;*/
+	margin: 0 auto;
+}
+
+.item h2{
+	color: #000;
+	font-size: 36px;
+	padding:40px 0;
+}
+
+.seedling{
+	margin-top: 20px;
+	width: 1008px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	
+}
+.seedling p{
+	color:#fff;
+	background-color: #9cb1a9;
+	padding: 10px 10px;
+	
+	text-align: center;
+}
+.heabtea-wrapper{
+	margin-top: 100px;
+}
+.heabtea{
+	padding: 20px 0 60px 0;
+	width: 1008px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	
+}
+
+.item h3{
+	padding:30px 0px 10px 10px;
+}
+	
+.heabtea p{
+	color:#fff;
+	background-color: #343232;
+	padding:20px 10px;
+	text-align: center;
+}
+
+.recipe{
+	width: 1175px;
+	/*height:1096px;*/
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: 140px;
+	
+}
+
+.recipe-wrapper{
+	width:686px;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.recipe p{
+	color:#000;
+	margin-left: 40px
+
+}
+
+.experience{
+	width: 1175px;
+	margin: 0 auto;
+	
+}
+
+.nae{
+	display: flex;
+	margin-bottom: 80px;
+	justify-content: space-between;
+}
+
+.swag{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.experiencemoji{
+	width: 300px;
+}
+
+.accessbox{
+	margin: 0 auto;
+}
+
+.access{
+    background-color: #9cb1a9;
+	width: 1175px;
+	height:600px;
+    display: flex;
+
+}
+.map{
+	margin-top: 80px;
+	margin-left: 80px;
+
+}
+.mapmoji{
+	margin-top: 80px;
+	margin-left: 80px;
+	color:#fff;
+}
+
+.btn {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+	transition: all .5s;
+	margin-top: 100px;
+	border: 1px solid#343232;
+    margin-left: 40px;
+}
+
+.btn:hover {
+  background-color: #efece7;
+}
+.itembtn {
+    text-decoration: none;
+    color: #000;
+    background-color: #efece7;
+    padding: 10px;
+    border-radius: 10px;
+	transition: all .5s;
+	margin-top: 100px;
+	border: 1px solid#343232;
+}
+
+.itembtn:hover {
+  background-color: #fff;
+}
+.menu ul{
+	display: flex;
+	text-align: right;
+}
+.menu li{
+    webkit-transform: skewX(150deg);
+    moz-transform: skewX(150deg);
+    transform: skewX(150deg);
+	border-right: 1px solid #fff;
+	font-size: 18px;
+}
+.menu li a{
+    display:block;
+    transform: skewX(-150deg);
+	padding:0 15px;
+	color: #fff;
+	text-decoration: none;
+}
+.menu-ja ul{
+	display: flex;
+}
+.menu-ja li{
+	font-size:14px;
+	
+}
+.menu-ja li a{
+    display:block;
+	padding:5px 20px;
+	color: #fff;
+	text-decoration: none;
+}		
+		
+		
+footer {
+    background-color: #343232;
+    color: #fff;
+    font-size: 16px;
+    padding: 25px;
+	text-align: center;
+	margin: 0 auto;
+}
